@@ -645,7 +645,7 @@ function setupAutocomplete() {
     ];
 
     const productSuggestions = [
-             'Anefol 5mg',
+       'Anefol 5mg',
 'Betabio 2mg',
 'Bisosel 10mg', 
 'Bisosel 5mg',
@@ -1626,5 +1626,4 @@ document.addEventListener('DOMContentLoaded', () => {
     
     setupAutocomplete();
     setupAboutDialog();
-
 });
