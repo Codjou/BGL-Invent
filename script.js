@@ -603,7 +603,11 @@ function setupFileImport() {
                     // Reinitialize calculations and UI
                     enhancedInitialization();
                     createTotalRow();
-
+                    // حفظ المشروع المستورد كحالة حالية للتطبيق
+                    localStorage.setItem(
+                    'inventaireAnnuelData',
+                    JSON.stringify(projectData.rows)
+                    );
                     // More detailed confirmation message
                     const rowCount = projectData.rows ? projectData.rows.length : 0;
                     alert(`Fichier "${file.name}" importé avec succès. ${rowCount} produits ajoutés.`);
@@ -1633,4 +1637,5 @@ document.addEventListener('DOMContentLoaded', () => {
         // Recalculate totals
         createTotalRow();
     });
+
 });
